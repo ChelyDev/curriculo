@@ -25,7 +25,7 @@ jobs:
         run: npm run build
 
       - name: Test - check Cybersecurity in index.astro
-        run: grep -q "Cybersecurity" src/pages/index.astro
+        run: grep -q "Cybersecurity" src/pages/index.astro && echo "OK" || (echo "Cybersecurity not found in index.astro" && exit 1)
 
 
      # - name: Deploy to Cloudflare Pages
