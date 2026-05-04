@@ -24,6 +24,10 @@ jobs:
       - name: Build site
         run: npm run build
 
+      - name: Test - check Cybersecurity in index.astro
+        run: grep -q "Cybersecurity" src/pages/index.astro
+
+
      # - name: Deploy to Cloudflare Pages
       #  uses: cloudflare/pages-action@v1
        # with:
