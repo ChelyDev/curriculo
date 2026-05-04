@@ -24,10 +24,10 @@ jobs:
       - name: Build site
         run: npm run build
 
-      - name: Deploy to Cloudflare Pages
-        uses: cloudflare/pages-action@v1
-        with:
-          apiToken: ${{ secrets.CF_PAGES_API_TOKEN }}
-          accountId: ${{ secrets.CF_ACCOUNT_ID }}
-          projectName: ${{ secrets.CF_PROJECT_NAME }}
-          directory: 'dist'
+     # - name: Deploy to Cloudflare Pages
+      #  uses: cloudflare/pages-action@v1
+       # with:
+        #  apiToken: ${{ secrets.CF_PAGES_API_TOKEN }}
+         # accountId: ${{ secrets.CF_ACCOUNT_ID }}
+          #projectName: ${{ secrets.CF_PROJECT_NAME }}
+         # directory: 'dist'
